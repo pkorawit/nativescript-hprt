@@ -182,6 +182,9 @@ export class Hprt {
 
         //this.LanguageEncode();  
 
+        HPRTAndroidSDK.HPRTPrinterHelper.LanguageEncode="tis-620"
+        
+        HPRTAndroidSDK.HPRTPrinterHelper.SetCharacterSet(0)
 
         if (text) {
             HPRTAndroidSDK.HPRTPrinterHelper.PrintText(text, align, attr, txtSize);
